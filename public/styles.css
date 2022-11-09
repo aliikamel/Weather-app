@@ -1,0 +1,170 @@
+body,
+html,
+#root {
+    margin: 0;
+    width: 390px;
+    height: 100%;
+    font-family: "Montserrat", sans-serif;
+}
+
+.bg-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    opacity: 0.8;
+    width: 390px;
+    height: 100%;
+}
+
+
+.main-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+input {
+    border: 0px;
+    border-radius: 1rem;
+    padding: 10px;
+    box-shadow: 3px 3px rgb(126, 126, 126);
+    outline: none;
+    font-family: "Montserrat", sans-serif;
+}
+
+input::placeholder {
+    font-size: 12px;
+    font-weight: 500;
+    font-style: italic;
+}
+
+.search-area {
+    margin: 50px 20px 0;
+    text-align: center;
+}
+
+.weather-area {
+    background-color: rgba(210, 210, 210, 0.652);
+    box-shadow: 3px 3px rgb(85, 84, 84);
+    border-radius: 40px;
+    padding: 20px 50px;
+    margin: 30px auto;
+    text-align: center;
+}
+
+.info-area {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.info-area div {
+    background-color: rgba(210, 210, 210, 0.652);
+    box-shadow: 3px 3px rgb(85, 84, 84);
+    border-radius: 10px;
+    padding: 10px 10px;
+    text-align: center;
+}
+
+#humidity-icon {
+    position: relative;
+    font-size: 1rem;
+    margin-right: 5px;
+    top: 3px;
+}
+
+#temp-icon {
+    position: relative;
+    font-size: 1rem;
+    margin-right: 5px;
+    top: 3px;
+}
+
+#wind-icon {
+    position: relative;
+    font-size: 1rem;
+    margin-right: 5px;
+    top: 3px;
+}
+
+
+.info-area h3 {
+    font-family: Ubuntu;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.info-area p {
+    font-family: Ubuntu;
+    color: white;
+    font-weight: 600;
+    text-shadow: 1px 1px rgb(0, 0, 0);
+    ;
+}
+
+#location-icon {
+    position: relative;
+    top: 3px;
+}
+
+
+#temperature {
+    padding: 0 20px;
+    color: rgb(255, 255, 255);
+    background-color: rgba(180, 180, 180, 0.652);
+    font-size: 4rem;
+    font-weight: 500;
+    border-radius: 10px;
+    width: 60%;
+    margin: auto;
+    box-shadow: 3px 3px rgb(85, 84, 84);
+    text-shadow: 3px 3px rgb(85, 84, 84);
+}
+
+#location {
+    color: rgb(0, 0, 0);
+    font-size: 1.5rem;
+    font-weight: bolder;
+    margin: 10px auto;
+    font-weight: 600;
+    font-family: Ubuntu;
+    text-shadow: 2px 1px rgb(130, 130, 130);
+}
+
+#description {
+    color: rgb(255, 255, 255);
+    font-family: Ubuntu;
+    font-size: 1rem;
+    font-weight: 300;
+    margin: 10px auto;
+    padding: 5px;
+
+    background-color: rgba(180, 180, 180, 0.652);
+    border-radius: 10px;
+    box-shadow: 3px 3px rgb(85, 84, 84);
+}
+
+#metric-fab {
+    background-color: rgba(56, 56, 56, 0.713);
+    color: rgb(255, 255, 255);
+    font-size: 1.5rem;
+    font-weight: bolder;
+    margin: 10px auto;
+    font-weight: 400;
+    font-family: Ubuntu;
+}
+
+
+
+#search-fab {
+    background-color: rgb(232, 232, 232);
+    margin: auto 10px;
+}
+
+#search-icon {
+    font-size: 1rem;
+}
