@@ -1,4 +1,4 @@
-import React, { useState, setIsLoaded, setError } from "react";
+import React, { useState } from "react";
 import { Fab } from "@mui/material";
 import LocationSearchingIcon from '@mui/icons-material/LocationSearching';
 
@@ -25,11 +25,12 @@ function Search(props) {
                     (result) => {
                         setItems(result)
                         props.result(items)
-                    },
-                    (error) => {
-                        setIsLoaded(true);
-                        setError(err);
                     }
+                    // ,
+                    // (error) => {
+                    //     setIsLoaded(true);
+                    //     setError(err);
+                    // }
                 )
         }
 
